@@ -5,27 +5,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulting Service</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 </head>
 <body>
     <!--Header section to contain logo and nav links-->
-    <header>
+    <header id="home">
         <div class="header-logo">
-            <img src="assets/images/LCB.svg" alt="Logo image">
+            <a href="main.html">
+                <img src="assets/images/LCB.svg" alt="Lucid Clarity Consulting logo image">
+            </a>
         </div>
         <nav>
-            <button onclick="scrollToHome()">Home</button>
-            <button onclick="scrollToService()">Service</button>
-            <button onclick="scrollToConsult()">Book</button>
-            <button onclick="scrollToContact()">Contact</button>
+            <button onclick="scrollToHome()" aria-label="Go to home">Home</button>
+            <button onclick="scrollToService()" aria-label="Go to service">Service</button>
+            <button onclick="scrollToConsult()" aria-label="Go to consultation form">Book</button>
+            <button onclick="scrollToContact()" aria-label="Go to contact">Contact</button>
         </nav>
     </header>
-    
-    
-    
-    <!--Script link to all Js files-->
+    <main>
+        <!--Hero section-->
+        <section class="hero-section">
+           <div class="hero-content">
+            <h1>Soar Beyond Limits with Lucid Clarity</h1>
+            <p>Like an eagle, we help your business rise above challenges and gain the clarity needed to dominate your market.</p>
+            <h2>Achieve the Extraordinary</h2>
+            <p>With precise strategies and bold solutions, we empower you to transform your vision into measurable success.</p>
+            <div class="cta-buttons">
+                <button class="primary-cta" onclick="consultationModal()" aria-label="Display a consultation form">Book Your Free Strategy Session</button>
+                <button class="secondary-cta" onclick="scrollToService()" aria-label="Scroll to the services">Learn About Our Expertise</button>
+            </div>
+           </div>
+        </section>
+
+        <!--About section-->
+        <section class="about-section">
+            <div id="aboutSection"></div>
+        </section>
+
+        <!--Service Section-->
+        <section class="service-section">
+            <div class="serviceSection"></div>
+        </section>
+
+        <!--Testimonial section-->
+        <section class="test-section">
+            <div class="testimonialSection"></div>
+        </section>
+
+        <!--Consultation form-->
+        <section class="consultation-form">
+            <div class="consultation-content">
+                <h2>Schedule Your Consultation</h2>
+                <p>Fill out the form below, and we'll reach out to schedule a consultation tailored to your business needs.</p>
+              <form id="consultationForm" action="#" method="post">
+
+                <!--Basic contact information-->
+                <div class="form-group">
+                    <label for="fullName">Full Name <span>*</span></label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your fullname!" required>
+                </div>
+
+                <div class="form-group">
+                   <label for="email">Email Address <span>*</span></label>
+                   <input type="email" name="email" id="email" placeholder="Youremail@example.com" required>
+                </div>
+
+                <div class="form-group">
+                 <label for="phoneNumber">Phone Number <span>*</span></label>
+                 <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+1-809-234-5155" required>
+                </div>
+
+                <!--Business Information-->
+                <div class="form-group">
+                 <label for="companyName">Company/Business Name</label>
+                 <input type="text" name="companyName" id="companyName" placeholder="Enter company/business name (optional)">
+                </div>
+
+                <div class="form-group">
+                    <label for="businessType">Business Type/Industry</label>
+                    <input type="text" id="businessType" name="businessType" placeholder="E.g., Technology, Retail, etc.">
+                </div>
+
+                <!--Business Goals-->
+                <div class="form-group">
+                    <label for="businessGoals">What Are Your Primary Business Goals?</label>
+                    <textarea id="businessGoals" name="businessGoals" rows="4" placeholder="E.g., Increase revenue, streamline operations, etc."></textarea>
+                </div>
+
+                <!--Current Challenges-->
+                <div class="form-group">
+                    <label for="businessChallenges">What Challenges Is Your Business Facing?</label>
+                    <textarea id="businessChallenges" name="businessChallenges" rows="4" placeholder="E.g., Lack of visibility, resource management, etc."></textarea>
+                </div>
+
+               <!-- Preferred Consultation Method -->
+                <div class="form-group">
+                    <fieldset>
+                        <label>How Would You Like to Be Contacted?</label>
+                    <div>
+                        <input type="radio" id="videoCall" name="contactMethod" value="video" required>
+                        <label for="videoCall">Video Call</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="phoneCall" name="contactMethod" value="phone">
+                        <label for="phoneCall">Phone Call</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="emailContact" name="contactMethod" value="email">
+                        <label for="emailContact">Email</label>
+                    </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Date and Time</label>
+                    <input type="datetime-local" id="preferredDate" name="preferredDate">
+                </div>
+        
+                <!-- Additional Information -->
+                <div class="form-group">
+                    <label for="additionalInfo">Anything Else You'd Like to Share?</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="3"></textarea>
+                </div>
+        
+                <!-- Agreement/Consent -->
+                <div class="form-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a>.</label>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Schedule Consultation</button>
+                </div>
+                
+              </form>
+            </div>
+        </section>
+        <!--Why choose us-->
+        <section class="why-us">
+            <div class="why-us-content">
+                <h3>Why Choose Lucid Clarity?</h3>
+                <span class="article">
+                    <p><strong>Vision Beyond the Horizon:</strong> Like the eagle, we see what others miss. Our forward-thinking strategies are designed to uncover hidden opportunities and chart a clear path to success.</p>
+                    <p><strong>Tailored Strategies for Your Growth:</strong> No cookie-cutter solutions here. We dive deep into understanding your business, crafting strategies that align with your unique goals and challenges.</p>
+                    <p><strong>Empowered by Expertise:</strong> Our team combines years of experience with cutting-edge knowledge, ensuring you stay ahead in a competitive market.</p>
+                    <p><strong>Results-Driven Approach:</strong> We don't just deliver ideas; we deliver measurable results. Your success is our ultimate goal.</p>
+                    <p><strong>Partnership That Transforms:</strong> At Lucid Clarity, we go beyond being consultants. We become your trusted partner, dedicated to your long-term success.</p>
+                    <p><strong>Innovative Solutions, Simplified:</strong> We specialize in making the complex simple, so you can focus on what matters most—growing your business.</p>
+                </span>
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-sec">
+          <!-- Contact Section -->
+          <section class="contact">
+            <h4>Contact Us</h4>
+            <address>
+              <strong>Lucid Clarity</strong><br>
+              833 Old Kings Rd, Apt 1403<br>
+              Jacksonville, FL 32254, USA<br>
+              <br>
+              Phone: <a href="tel:+14356780987" aria-label="Call us at +1 435 678 0987">+1 435 678 0987</a><br>
+              Email: <a href="mailto:info@lucidclarity.com" aria-label="Send us an email at info@lucidclarity.com">info@lucidclarity.com</a>
+            </address>
+            <div class="social-links">
+              <h5>Follow Us</h5>
+              <a href="#" aria-label="Follow us on Twitter">
+                <img src="assets/icons/alpha-x-circle.svg" alt="Twitter Logo">
+              </a>
+              <a href="#" aria-label="Follow us on Facebook">
+                <img src="assets/icons/facebook.svg" alt="Facebook Logo">
+              </a>
+              <a href="#" aria-label="Follow us on Instagram">
+                <img src="assets/icons/instagram.svg" alt="Instagram Logo">
+              </a>
+            </div>
+          </section>
+      
+          <!-- Quick Links Section -->
+          <section class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home" aria-label="Navigate to Home section">Home</a></li>
+              <li><a href="#aboutSection" aria-label="Learn more About us">About</a></li>
+              <li><a href="#consultationForm" aria-label="Book a consultation">Consult</a></li>
+            </ul>
+          </section>
+      
+          <!-- Legal Section -->
+          <section class="privacy">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#" aria-label="Read our Terms of Service">Terms of Service</a></li>
+              <li><a href="#" aria-label="Read our Privacy Policy">Privacy Policy</a></li>
+              <li><a href="#" aria-label="Read our Cookie Policy">Cookie Policy</a></li>
+            </ul>
+          </section>
+        </div>
+      
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 <strong>Lucid Clarity</strong>. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+    <!--Script link to bundle Js-->
     <script type="module" src="main.js"></script>
-    <script type="module" src="about.js"></script>
-    <script type="module" src="service.js"></script>
-    <script type="module" src="testimonial.js"></script>
 </body>
 </html>
