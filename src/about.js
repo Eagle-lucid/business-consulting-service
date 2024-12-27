@@ -1,6 +1,6 @@
 import './about.css';
 
-function aboutSectionContent() {
+function aboutSectionContent () {
     const aboutSection = document.getElementById('aboutSection');
 
     // Content for about section
