@@ -1,50 +1,58 @@
 // Import service css
 import './service.css';
+import ideasIcon from './assets/icons/ideas.png';
+import lineChartIcon from './assets/icons/line-chart.png';
+import engineeringIcon from './assets/icons/engineering.png';
+import leafIcon from './assets/icons/leaf.png';
+import paintbrushIcon from './assets/icons/paintbrush.png';
+import startupIcon from './assets/icons/startup.png';
+import communityIcon from './assets/icons/community.png';
+import shieldIcon from './assets/icons/shield.png';
 
-    // Array of services
-    const services = [
-        {
-            icon: 'assets/icons/ideas.png',
-            title: 'Business Consultation',
-            description: 'Expert advice to align your business goals with actionable strategies for success.',
-        },
-        {
-            icon: 'assets/icons/line-chart.png',
-            title: 'Data-Driven Market Intelligence',
-            description: 'Leverage insights and analytics to make informed decisions and stay ahead of trends.',
-        },
-        {
-            icon: 'assets/icons/engineering.png',
-            title: 'Digital Transformation Consulting',
-            description: 'Empower your business to adapt and thrive in a rapidly evolving digital landscape.',
-        },
-        {
-            icon: 'assets/icons/leaf.png',
-            title: 'Sustainability & Green Business Strategy',
-            description: 'Create eco-friendly strategies that drive growth while respecting the environment.',
-        },
-        {
-            icon: 'assets/icons/paintbrush.png',
-            title: 'Branding for the Digital Age',
-            description: 'Build a modern brand identity that resonates across digital platforms and audiences.',
-        },
-        {
-            icon: 'assets/icons/startup.png',
-            title: 'Innovation & Product Development',
-            description: 'Foster creativity to develop groundbreaking products and solutions for your market.',
-        },
-        {
-            icon: 'assets/icons/community.png',
-            title: 'Diversity, Equity & Inclusion (DEI) Strategy',
-            description: 'Promote an inclusive culture that embraces diversity and drives team success.',
-        },
-        {
-            icon: 'assets/icons/shield.png',
-            title: 'Crisis Management & Business Continuity Planning',
-            description: 'Prepare and navigate through challenges with tailored risk management strategies.',
-        },
-        
-    ];
+// Array of services
+const services = [
+    {
+        icon: ideasIcon,
+        title: 'Business Consultation',
+        description: 'Expert advice to align your business goals with actionable strategies for success.',
+    },
+    {
+        icon: lineChartIcon,
+        title: 'Data-Driven Market Intelligence',
+        description: 'Leverage insights and analytics to make informed decisions and stay ahead of trends.',
+    },
+    {
+        icon: engineeringIcon,
+        title: 'Digital Transformation Consulting',
+        description: 'Empower your business to adapt and thrive in a rapidly evolving digital landscape.',
+    },
+    {
+        icon: leafIcon,
+        title: 'Sustainability & Green Business Strategy',
+        description: 'Create eco-friendly strategies that drive growth while respecting the environment.',
+    },
+    {
+        icon: paintbrushIcon,
+        title: 'Branding for the Digital Age',
+        description: 'Build a modern brand identity that resonates across digital platforms and audiences.',
+    },
+    {
+        icon: startupIcon,
+        title: 'Innovation & Product Development',
+        description: 'Foster creativity to develop groundbreaking products and solutions for your market.',
+    },
+    {
+        icon: communityIcon,
+        title: 'Diversity, Equity & Inclusion (DEI) Strategy',
+        description: 'Promote an inclusive culture that embraces diversity and drives team success.',
+    },
+    {
+        icon: shieldIcon,
+        title: 'Crisis Management & Business Continuity Planning',
+        description: 'Prepare and navigate through challenges with tailored risk management strategies.',
+    },
+];
+
 
 // Function for serviceSection
 function serviceSectionContent () {
