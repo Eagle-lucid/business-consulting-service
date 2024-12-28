@@ -1,4 +1,4 @@
-// Import service css
+// Import service.css & Icons
 import './service.css';
 import ideasIcon from './assets/icons/ideas.png';
 import lineChartIcon from './assets/icons/line-chart.png';
