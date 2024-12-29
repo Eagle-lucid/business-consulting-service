@@ -16,10 +16,13 @@
             </a>
         </div>
         <nav>
-            <button onclick="scrollToHome()" aria-label="Go to home">Home</button>
-            <button onclick="scrollToService()" aria-label="Go to service">Service</button>
-            <button onclick="scrollToContact()" aria-label="Go to contact">Contact</button>
-            <button onclick="scrollToConsult()" aria-label="Go to consultation form">Let's Connect</button>
+          <nav>
+            <button data-scroll-target="home" aria-label="Go to home">Home</button>
+            <button data-scroll-target="service" aria-label="Go to service">Service</button>
+            <button data-scroll-target="contact" aria-label="Go to contact">Contact</button>
+            <button data-scroll-target="consultationForm" aria-label="Go to consultation form">Let's Connect</button>
+          </nav>
+          
         </nav>
     </header>
     <main>
@@ -43,7 +46,7 @@
         </section>
 
         <!--Service Section-->
-        <section class="service-section">
+        <section id="service" class="service-section">
             <div id="serviceSection"></div>
         </section>
 
@@ -53,7 +56,7 @@
         </section>
 
         <!--Consultation form-->
-        <section class="consultation-form">
+        <section id="consultationForm" class="consultation-form">
             <div class="consultation-content">
                 <h2>Schedule Your Consultation</h2>
                 <p>Your business deserves tailored solutions. Schedule a free consultation and let's start the journey toward success together.</p>
@@ -159,7 +162,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="footer-sec">
           <!-- Contact Section -->
           <section class="contact">
