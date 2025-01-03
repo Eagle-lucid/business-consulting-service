@@ -6,19 +6,20 @@ function aboutSectionContent () {
     // Content for about section
     const aboutContent = `
         <div class="about-content">
-                <div class="fade-in-left">
+            <h2>About Lucid Clarity</h2>
+            <div class="fade-in-left">
+                
+                <div class="about-card">  
+                <p>At <strong>Lucid Clarity Consulting</strong>, we specialize in providing tailored strategies and bold solutions that empower businesses to achieve measurable success. Our team of experts combines years of experience with cutting-edge insights to ensure your business thrives in a competitive market.</p>
+                </div>
+        
+                <div class="mission-vision fade-in-left">
                     <div class="about-card">
-                    <h2>About Lucid Clarity</h2>
-                    <p>At <strong>Lucid Clarity Consulting</strong>, we specialize in providing tailored strategies and bold solutions that empower businesses to achieve measurable success. Our team of experts combines years of experience with cutting-edge insights to ensure your business thrives in a competitive market.</p>
+                        <h3>Our Mission</h3>
+                        <p>To empower businesses with actionable strategies that drive growth, inspire innovation, and create lasting impact.</p>
                     </div>
-            
-                    <div class="mission-vision fade-in-left">
-                        <div class="about-card">
-                            <h3>Our Mission</h3>
-                            <p>To empower businesses with actionable strategies that drive growth, inspire innovation, and create lasting impact.</p>
-                        </div>
-                    </div>
-                </div>                    
+                </div>
+            </div>                    
 
             <div class="vision fade-in-right">
                 <div class="about-card">
