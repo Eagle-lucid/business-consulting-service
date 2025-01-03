@@ -6,34 +6,43 @@ function aboutSectionContent () {
     // Content for about section
     const aboutContent = `
         <div class="about-content">
-            <div class="fade-in-left">
-            <h2>About Lucid Clarity</h2>
-            <p>At <strong>Lucid Clarity Consulting</strong>, we specialize in providing tailored strategies and bold solutions that empower businesses to achieve measurable success. Our team of experts combines years of experience with cutting-edge insights to ensure your business thrives in a competitive market.</p>
+                <div class="fade-in-left">
+                    <div class="about-card">
+                    <h2>About Lucid Clarity</h2>
+                    <p>At <strong>Lucid Clarity Consulting</strong>, we specialize in providing tailored strategies and bold solutions that empower businesses to achieve measurable success. Our team of experts combines years of experience with cutting-edge insights to ensure your business thrives in a competitive market.</p>
+                    </div>
             
-            <div class="mission-vision">
-                <div class="mission fade-in-left">
-                    <h3>Our Mission</h3>
-                    <p>To empower businesses with actionable strategies that drive growth, inspire innovation, and create lasting impact.</p>
-                </div>
-            </div>
-                <div class="vision fade-in-right">
+                    <div class="mission-vision fade-in-left">
+                        <div class="about-card">
+                            <h3>Our Mission</h3>
+                            <p>To empower businesses with actionable strategies that drive growth, inspire innovation, and create lasting impact.</p>
+                        </div>
+                    </div>
+                </div>                    
+
+            <div class="vision fade-in-right">
+                <div class="about-card">
                     <h3>Our Vision</h3>
                     <p>To be the go-to consulting firm known for unlocking clarity and transforming businesses worldwide.</p>
                 </div>
+            </div>
             
             <div class="core-values fade-in-left">
-                <h3>Our Core Values</h3>
-                <ul>
-                    <li><strong>Innovation:</strong> Embracing creativity to deliver cutting-edge solutions.</li>
-                    <li><strong>Trust:</strong> Building strong relationships through honesty and transparency.</li>
-                    <li><strong>Results:</strong> Driving measurable success for every client.</li>
-                </ul>
-            </div>
+                <div class="about-card">
+                    <h3>Our Core Values</h3>
+                    <ul>
+                        <li><strong>Innovation:</strong> Embracing creativity to deliver cutting-edge solutions.</li>
+                        <li><strong>Trust:</strong> Building strong relationships through honesty and transparency.</li>
+                        <li><strong>Results:</strong> Driving measurable success for every client.</li>
+                    </ul>
                 </div>
+            </div>
             
             <div class="cta-section fade-in-up">
-                <h3>Stay Updated</h3>
-                <p>Want to learn more about us and stay updated with the latest insights? Subscribe to our newsletter!</p>
+                <div class="about-card">
+                    <h3>Stay Updated</h3>
+                    <p>Want to learn more about us and stay updated with the latest insights? Subscribe to our newsletter!</p>
+                </div>
                 <form id="subscription-form" class="subscription-form">
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                     <button type="submit" class="cta-button" aria-label="Subscribe to Newsletter">Subscribe</button>
