@@ -63,9 +63,11 @@ function serviceSectionContent () {
         (service) => `
         <div class="service-card">
         <img src="${service.icon}" alt="${service.title} Icon" class="service-icon" />
+        <div class="service-details">
         <h4>${service.title}</h4>
         <p>${service.description}</p>
         </div>
+        </div>   
         `
     )
     .join('');
