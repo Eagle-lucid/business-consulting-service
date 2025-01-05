@@ -85,6 +85,33 @@ function testimonialSectionContent() {
     `;
     
     testimonialSection.innerHTML = testimonialContent;
+    initCarousel();
 }
+// Carousel logic
+function initCarousel() {
+    const container = document.querySelector('.carousel-container');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
 
+    let currentIndex = 0;
+
+    function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 20;
+        container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+}
 export default testimonialSectionContent;
