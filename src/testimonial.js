@@ -70,10 +70,16 @@ function testimonialSectionContent() {
     
     const testimonialContent = `
     <div class="testimonial-content">
-        <h3>What Our Clients Say</h3>
-        <p>Our clients trust us to deliver results. Here’s what they have to say about our services:</p>
-        <div class="testimonial-list">
+        <div class="testimonial-header">
+            <h3>What Our Clients Say</h3>
+            <p>Our clients trust us to deliver results. Here's what they have to say about our services:</p>
+        </div>
+        <div class="testimonial-carousel">
+        <button id="prev" class="carousel-button"><</button>
+        <div class="carousel-container">
             ${testimonialCards}
+        </div>
+        <button id="next" class="carousel-button">></button>
         </div>
     </div>
     `;
