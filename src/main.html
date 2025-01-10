@@ -58,9 +58,11 @@
         <!--Consultation form-->
         <section id="consultationForm" class="consultation-form">
             <div class="consultation-content">
-                <h2>Schedule Your Consultation</h2>
-                <p>Your business deserves tailored solutions. Schedule a free consultation and let's start the journey toward success together.</p>
-              <form id="consultationForm" action="#" method="post">
+                <div class="consult-header">
+                  <h2>Schedule Your Consultation</h2>
+                  <p>Your business deserves tailored solutions. Schedule a free consultation and let's start the journey toward success together.</p>
+                </div>
+              <form id="consultForm" action="#" method="post">
 
                 <!--Basic contact information-->
                 <div class="form-group">
@@ -105,17 +107,23 @@
                 <div class="form-group">
                     <fieldset>
                         <label>How Would You Like to Be Contacted?</label>
-                    <div>
-                        <input type="radio" id="videoCall" name="contactMethod" value="video" required>
-                        <label for="videoCall">Video Call</label>
+                    <div class=" form-group contact-con">
+                        <div class="con">
+                          <input type="radio" id="videoCall" name="contactMethod" value="video" required>
+                          <label for="videoCall">Video Call</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" id="phoneCall" name="contactMethod" value="phone">
-                        <label for="phoneCall">Phone Call</label>
+                    <div class="form-group contact-con">
+                        <div class="con">
+                          <input type="radio" id="phoneCall" name="contactMethod" value="phone">
+                          <label for="phoneCall">Phone Call</label>
+                        </div>
                     </div>
-                    <div>
+                    <div class="form-group contact-con">
+                       <div class="con">
                         <input type="radio" id="emailContact" name="contactMethod" value="email">
                         <label for="emailContact">Email</label>
+                       </div>
                     </div>
                     </fieldset>
                 </div>
@@ -132,9 +140,13 @@
                 </div>
         
                 <!-- Agreement/Consent -->
-                <div class="form-group">
-                    <input type="checkbox" id="consent" name="consent" required>
-                    <label for="consent">I agree to the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a>.</label>
+                <div class="form-group contact-con">
+                  <input type="checkbox" id="consent" name="consent" required>
+                    <div class="con"> 
+                    <label class="consent" for="consent">
+                      I agree to the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a>.
+                    </label>
+                    </div>
                 </div>
         
                 <!-- Submit Button -->
