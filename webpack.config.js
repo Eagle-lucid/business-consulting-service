@@ -32,7 +32,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'], // Process CSS files
+        use: [MiniCssExtractPlugin.loader, 'css-loader'], // Process CSS files
       },
       {
         test: /\.html$/i,
